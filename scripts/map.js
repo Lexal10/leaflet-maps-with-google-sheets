@@ -128,7 +128,7 @@ $(window).on('load', function() {
       if (point.Latitude !== '' && point.Longitude !== '') {
         var marker = L.marker([point.Latitude, point.Longitude], {icon: icon})
           .bindPopup("<b>" + point['Name'] + '</b><br>' + ("City: ") + point['City'] + '<br>' +
-          point['Description'] + ("Address: ") + point['Location'] + ("Mine."));
+          point['Description'] + '<br>' + ("Address: ") + point['Location']);
 
         if (layers !== undefined && layers.length !== 1) {
           marker.addTo(layers[point.Group]);
