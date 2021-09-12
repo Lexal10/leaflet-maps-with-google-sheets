@@ -7,8 +7,9 @@ body {
 }
 
 #map {
-  width: 100vw;
-  height: 100vh;
+  min-width: 990px;
+  height: 450px;
+  position: center;
   visibility: hidden;
 }
 
